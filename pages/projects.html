@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Edison Chen</title>
+  <meta name="description" content="Selected projects and experience by Edison Chen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <nav class="topnav">
+    <a href="../index.html" class="brand">Edison Chen</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Welcome</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <span class="icon-sun" aria-hidden="true">☀</span>
+      <span class="icon-moon" aria-hidden="true">☾</span>
+    </button>
+  </nav>
+
+  <main>
+    <section class="section page-section">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h1 class="section-title">Selected Work &amp; Experience</h1>
+        <p class="lede">
+          Click any project to view the full case study — summary, design, gallery, and notebook.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="slideshow" data-slideshow>
+              <div class="slides">
+                <div class="slide active">
+                  <img src="../images/1502FinalProjectGallery/DisassembledBoard.png" alt="Disassembled board" />
+                </div>
+                <div class="slide">
+                  <div class="slide-split">
+                    <img src="../images/1502FinalProjectGallery/Instructions%20Manual.png" alt="Instructions manual page 1" />
+                    <img src="../images/1502FinalProjectGallery/Instructions%20Manual%20(1).png" alt="Instructions manual page 2" />
+                  </div>
+                </div>
+                <div class="slide">
+                  <iframe
+                    src="https://player.vimeo.com/video/1181818699"
+                    title="Circuit Blocks demo"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <button class="slide-prev" aria-label="Previous image" type="button">&#8249;</button>
+              <button class="slide-next" aria-label="Next image" type="button">&#8250;</button>
+              <div class="slide-dots" aria-hidden="true">
+                <button class="dot active" type="button"></button>
+                <button class="dot" type="button"></button>
+                <button class="dot" type="button"></button>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3>Circuit Blocks</h3>
+              <p class="project-summary">
+                Final project for Cornerstone of Engineering 1502 at Northeastern University— 
+                A hands-on circuit-building puzzle game for 5th graders where players arrange 
+                electronic component blocks on a grid to complete a working circuit.
+              </p>
+              <a href="../projects/1502FinalProject.html" class="btn btn-ghost btn-sm">View Project →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="slideshow" data-slideshow>
+              <div class="slides">
+                <div class="slide active">
+                  <img src="../images/MicroBugGallery/MicrobugCompleted.png" alt="Completed MicroBug robot soldered onto its PCB" style="margin:0; width:100%; height:100%; object-fit:cover; transform:scale(0.99);" />
+                </div>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3>MicroBug</h3>
+              <p class="project-summary">
+                A light-sensitive robot built and soldered to have two light-dependent
+                resistors steer a pair of motors such that the bug scurries toward 
+                or away from light.
+              </p>
+              <a href="../projects/Microbug.html" class="btn btn-ghost btn-sm">View Project →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Edison Chen</p>
+      <p class="footer-tag">Built with HTML, CSS &amp; care.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

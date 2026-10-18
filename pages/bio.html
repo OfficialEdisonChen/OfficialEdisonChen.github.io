@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio — Edison Chen</title>
+  <meta name="description" content="About Edison Chen — education, leadership, skills, and awards." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <nav class="topnav">
+    <a href="../index.html" class="brand">Edison Chen</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Welcome</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="bio.html" class="active">Bio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <span class="icon-sun" aria-hidden="true">☀</span>
+      <span class="icon-moon" aria-hidden="true">☾</span>
+    </button>
+  </nav>
+
+  <main>
+    <section class="section page-section">
+      <div class="container">
+        <p class="eyebrow">Bio</p>
+        <h1 class="section-title">About Me</h1>
+        <p class="lede">
+          Electrical engineering student at Northeastern University with a minor in Computer Science.
+          I love working at the intersection of hardware and software — robotics, and embedded systems.
+        </p>
+
+        <div class="bio-block">
+          <h3>Experience</h3>
+          <div class="bio-timeline bio-timeline--boxed">
+            <div class="entry">
+              <div class="entry-head">
+                <strong>Appliant Robotics Student Intern</strong>
+                <span class="date">May 2026 - Aug 2026</span>
+              </div>
+              <p>
+                Built and programmed robotic arms, and a robotic dog and crawler using Arduino, Raspberry Pi (4/5), 
+                and Viam usage, integrating YOLO-based computer vision and RealSense sensing for real-time control. 
+                Collected teleoperation datasets and trained ACT/VLA policies via LeRobot on GPU, CPU, 
+                and Jetson Nano hardware, managing the full pipeline from calibration to deployment.
+
+              </p>
+            </div>
+            <div class="entry">
+              <div class="entry-head">
+                <strong>NASA L’ SPACE MCA — Electrical Engineer Programmatic Specialist</strong>
+                <span class="date">Jan 2026 - Apr 2026</span>
+              </div>
+              <p>
+                Worked in a multidisciplinary team to design a space mission concept and 
+                mission operations for a simulated NASA mission under mentorship from NASA scientists and engineers
+              </p>
+            </div>
+            <div class="entry">
+              <div class="entry-head">
+                <strong>Vice President — Robotics &amp; Engineering Club</strong>
+                <span class="date">Sept 2025 - Apr 2026</span>
+              </div>
+              <p>
+                Building a community-driven STEM club through professional engagement,
+                personalized projects, and outreach events.
+              </p>
+            </div>
+            <div class="entry">
+              <div class="entry-head">
+                <strong>Programming/Electrical Head — Robotics High School Team</strong>
+                <span class="date">Sept 2022 - May 2025</span>
+              </div>
+              <p>
+                Programmed autonomous navigation with PathPlanner, integrated wiring for swerve modules, 
+                and installed LED indicators for competitions.
+              </p>
+            </div>
+            <div class="entry">
+              <div class="entry-head">
+                <strong>Inspirit AI Scholars</strong>
+                <span class="date">June 2023 - Aug 2023</span>
+              </div>
+              <p>
+                Developed AI models to accurately predict exoplanet presence using astronomy data,
+                focusing on machine learning techniques based on flux and luminosity data
+              </p>
+            </div>
+            <div class="entry">
+              <div class="entry-head">
+                <strong>Arduino Prototyping —  CTY Online Course</strong>
+                <span class="date">June 2021 - July 2021</span>
+              </div>
+              <p>
+                Participate in Zoom workshops on electronics basics, programming,
+                and prototyping to build functional devices
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bio-grid">
+          <div class="bio-block">
+            <h3>Education</h3>
+            <div class="bio-timeline bio-timeline--boxed">
+              <div class="entry">
+                <div class="entry-head">
+                  <strong>Northeastern University, College of Engineering</strong>
+                  <span class="date">Expected May 2029</span>
+                </div>
+                <p>B.S. Electrical Engineering · Minor in Computer Science · Boston, MA</p>
+                <p class="muted">Cumulative GPA: 3.9</p>
+                <p class="muted">
+                  Coursework: Discrete Structures, Program Design and Implementation 1/2,
+                  Physics for Engineering 1/2, General Chemistry for Engineering, Calculus 1/2, 
+                  Differential Equations, Circuits and Signals, Computer Systems
+                </p>
+              </div>
+              <div class="entry">
+                <div class="entry-head">
+                  <strong>Syosset High School</strong>
+                  <span class="date">Sept 2021 – June 2025</span>
+                </div>
+                <p class="muted">GPA: 4.0</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bio-block">
+            <h3>Skills</h3>
+            <p><strong>Languages:</strong> Python, Java, HTML, CSS, C++, Linux, Raspbian, Jetson Linux</p>
+            <p><strong>Frameworks &amp; Tools:</strong> Git, pandas, NumPy, scikit-learn, Gradle</p>
+            <p><strong>Hardware &amp; Software:</strong> AutoCAD, Vectorworks, Jupyter, Excel, MATLAB, NX Siemens</p>
+          </div>
+
+          <div class="bio-block">
+            <h3>Awards</h3>
+            <ul class="awards">
+              <li>Roslyn Code Overload Hackathon 2024 — 2nd Place, Creativity Award (40+ teams)</li>
+              <li>PicoCTF CMU Cybersecurity Competition 2024 — Top 10% Nationwide</li>
+              <li>St. Joseph's University Hackathon — 10th Place</li>
+              <li>FRC — 1st place FIRST Long Island Regional, Autonomous Award, 13th Hudson Valley, 29th Curie Division Worlds</li>
+              <li>FTC — Motivate Award, Connect Award, Inspire Award 3rd, Design Award 2nd, 13th Long Island Championship</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Edison Chen</p>
+      <p class="footer-tag">Built with HTML, CSS &amp; care.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
